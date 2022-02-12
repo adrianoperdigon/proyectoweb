@@ -6,6 +6,10 @@ body {
     font-size: 22px;
     
 }
+.barranav{
+  background: rgb(0,36,2);
+background: linear-gradient(90deg, rgba(0,36,2,1) 35%, rgba(3,62,8,1) 73%, rgba(3,64,9,1) 76%, rgba(6,37,55,1) 100%);
+}
 .carousel .carousel-item {
     height: 500px;
    
@@ -30,4 +34,13 @@ body {
           left: 0;
           min-height: 600px;
       }
+      .barranav{
+        height: 90px;
+      }
+      .cardshome{
+        height: 500px;
+        width: 100%;
+      }
+      
+      
   }
