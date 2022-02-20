@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 body {
     font-family: 'Oswald', sans-serif !important;
   }
@@ -10,21 +10,61 @@ body {
   background: rgb(0,36,2);
 background: linear-gradient(90deg, rgba(0,36,2,1) 35%, rgba(3,62,8,1) 73%, rgba(3,64,9,1) 76%, rgba(6,37,55,1) 100%);
 }
-.carousel .carousel-item {
+
+.carousel {
     height: 500px;
-   
+    
   }
+
+  .carousel-item {
+    height: 500px
+    
+  }
+ 
   
+  .carousel{
+    min-height: 500px;
+    max-width: 100%;
+  }
   .carousel-item img {
       position: absolute;
       object-fit:cover;
       top: 0;
       left: 0;
       min-height: 500px;
+      max-width: 100%;
   }
-  @media(min-width:768px) {
+  @media(min-width:1025px) {
     .carousel .carousel-item {
-        height: 600px;
+        height: 900px;
+      }
+      .carousel-item img {
+        position: absolute;
+        object-fit:cover;
+        top: 0;
+        left: 0;
+        min-height: 900px;
+    }
+    .carouselcampeones .carousel .carousel-item{
+      
+      margin-left: 250px;
+      height: 600px;
+      width: 1000px;
+    }
+    .h1runaterra{
+     
+      padding-top: 400px;
+    }
+    .lugaresdeinteres{
+      margin-top: 100px; ;
+    }
+    .carouselcampeones{
+      margin-bottom: 500px;
+      height: 20px;
+    }
+  @media(max-width:768px) {
+    .carousel .carousel-item {
+        height: 500px;
       }
       
       .carousel-item img {
@@ -37,10 +77,7 @@ background: linear-gradient(90deg, rgba(0,36,2,1) 35%, rgba(3,62,8,1) 73%, rgba(
       .barranav{
         height: 90px;
       }
-      .cardshome{
-        height: 500px;
-        width: 100%;
-      }
       
       
-  }
+      
+  }}
