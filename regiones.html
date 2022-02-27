@@ -5,6 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pagina con informacion sobre Runaterra">
+   <meta name="keywords"  content="HTML, ASP, JS, JavaScrips">
     <!-- GoogleFont -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,61 +23,70 @@
 <!-- NAVBAR -->
 <header>
 
-    <body class="bg-dark container-fluid">
-        <div class="container-fluid p-0 bg-light px-3">
-            <nav class="barranav navbar navbar-expand-lg navbar-dark p-2 py-2 py-lg-5 fixed-top">
-                <a class="navbar-brand navbartitulo" href="index.html">
-                    <img src="assets/logo.png" width="60" height="60" class="d-inline-block align-center" alt="">
-                    Universo Runaterra
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuHamburguesa"
-                    aria-controls="menuHamburguesa" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <div class="container-fluid px-3 fixed-top ">
+        <nav
+            class="barranav navbar navbar-expand-md navbar-dark p-2 py-2 py-lg-5 fixed-top border-4 border-bottom border-dark">
+            <div></div><a class="navbar-brand navbartitulo" href="index.html">
+                <img src="assets/logo.png" width="60" height="60" class="d-inline-block align-center" alt="">
+                Universo Runaterra
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                <span class="navbar-toggler-icon "></span>
+            </button>
 
-                <div class="collapse navbar-collapse" id="menuHamburguesa">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="campeones.html">Campeones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="regiones.html">Regiones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="facciones.html">Facciones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
+            <div class="collapse navbar-collapse" id="MenuNavegacion">
+                <ul class="navbar-nav ms-3 text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="campeones.html">Campeones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="regiones.html">Regiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="facciones.html">Facciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
 
-                </div>
-                </li>
-                </ul>
+            </div>
+            </li>
+            </ul>
+            <div>
                 <div>
-                    <div>
 
-                    </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
 </header>
-<main>
+<main class="container-fluid p-0 m-0 bg-dark">
     <!-- Banner-Carousel -->
     <div class="container-fluid p-0 m-0 carouselBanner">
         <div id="carouselBanner" class="carousel slide " data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="700">
-                    <img src="assets/ioniabanner.jpg" class="d-block w-100" alt="...">
+
+            <div class="carousel-inner carouselBanner">
+                <div class="carousel-item active carouselBanner" data-bs-interval="">
+                    <img src="assets/ioniabanner.jpg" class="d-block w-100 imgBanner" alt="...">
+                    <div class="bottom-left col-md-6 px-0">
+
+                        <h1 class="display-4 font-italic">Bienvenido a Universo Runaterra</h1>
+                        <p class="lead my-3"> Donde podras encontrar toda la informacion relacionada con el Universo de
+                            League of
+                            Legends</p>
+
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/luxbanner.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/luxbanner.jpg" class="d-block w-100 imgBanner" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/icathiabanner.webp" class="d-block w-100" alt="...">
+                    <img src="assets/icathiabanner.webp" class="d-block w-100 imgBanner" alt="...">
                 </div>
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -85,173 +96,167 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+
     </div>
     <!-- finBanner -->
-    <div class="container-fluid bg-dark h1runaterra">
-        <div class="jumbotron py-3 px-0 p-md-5 text-white rounded bg-dark">
-            <div class="col-md-6 px-0">
-                <h1 class="display-4 font-italic">Regiones de Runaterra</h1>
-                <p class="lead my-3">Explora y descubre todos los detalles</p>
-            </div>
-        </div>
-    </div>
+
 
     <div class="container-fluid text-center py-5 bg-secondary">
-        <h2>Lista de Regiones</h2>
+        <h2>Regiones</h2>
     </div>
     <!-- listaRegiones -->
-    <div class="container-fluid" data-aos="fade-right" data-aos-delay="50">
+
+
+    <div class="container-fluid bg-dark" data-aos="fade-right" data-aos-delay="50">
         <div class="list-group bg-dark pt-4">
 
-            <a href="#regionDemacia" class="list-group-item list-group-item-action list-group-item-primary">Demacia</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Noxus</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Shurima</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Aguas Turbias</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-success">Isla de las Sombras</a>
+            <a href="#regionDemacia" class="list-group-item list-group-item-action itemListaDemacia">Demacia</a>
+            <a href="#" class="list-group-item list-group-item-action  itemListaNoxus">Noxus</a>
+            <a href="#" class="list-group-item list-group-item-action  itemListaShurima">Shurima</a>
+            <a href="#" class="list-group-item list-group-item-action itemListaAguasTurbias">Aguas Turbias</a>
+            <a href="#" class="list-group-item list-group-item-action  itemListaIslas">Isla de las Sombras</a>
 
         </div>
     </div>
     <!-- finListaRegiones -->
-    <div class="container-fluid bg-dark p-0 m-0 pt-4 text-light>
+    <div class="container-fluid bg-dark p-0 mx-0 pt-4 text-light>
         <div class=" container-fluid p-0 m-0">
         <!-- regionDemaciaInfo -->
-        
-        <div id="regionDemacia" class="row p-0">
-            <div class="container-fluid pr-3 mr-3">
-                <div id="carouselRegionDemacia" class="carousel slide " data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="700">
-                            <img src="assets/demacia-grandplaza.jpg" class="d-block w-100" alt="...">
 
-                        </div>
-                    </div>
-                    <div class="row pt-1 carouselcampeones" data-aos="fade-right" data-aos-delay="00" data-aos-duration="1000">
-                        <div class="col-12 pt-2 px-5 bg-secondary">
-                            <p>Demacia</p>
-                            <p> Un reino fuerte y legal con una prestigiosa historia militar, el pueblo de Demacia
-                                siempre ha
-                                valorado más los ideales de justicia, honor y deber, y está tremendamente orgulloso de
-                                su herencia
-                                cultural. Pero a pesar de estos elevados principios, esta nación en gran parte
-                                autosuficiente se ha
-                                vuelto más insular y aislacionista en los últimos siglos.
-                            </p>
-                            <p> Ahora, Demacia es un reino en agitación.
+        <div class="container px-0" id="regionDemacia">
+            <div class="row g-2">
+                <div class="col-12 col-lg-3 regionItem"><img src="assets/demacialogo.png" class="regionItem d-block w-100" alt="...">
+                </div>
+                <div class="col-12 col-lg-3 text-light bg-secondary regionItem">
+                    <p>Demacia</p>
+                    <p> Un reino fuerte y legal con una prestigiosa historia militar, el pueblo de Demacia
+                        siempre ha
+                        valorado más los ideales de justicia, honor y deber, y está tremendamente orgulloso de
+                        su herencia
+                        cultural. Pero a pesar de estos elevados principios, esta nación en gran parte
+                        autosuficiente se ha
+                        vuelto más insular y aislacionista en los últimos siglos.
+                    </p>
+                    <p> Ahora, Demacia es un reino en agitación.
 
-                                La capital, la Gran Ciudad de Demacia, fue fundada como un refugio de la hechicería
-                                después de la
-                                pesadilla de las Guerras Rúnicas, y construida sobre el enigma de la petricita, una
-                                peculiar piedra
-                                blanca que amortigua la energía mágica. Es desde aquí donde la familia real se ha
-                                ocupado durante
-                                mucho tiempo de la defensa de las ciudades y pueblos periféricos, las tierras de
-                                cultivo, los
-                                bosques y las montañas ricas en recursos minerales.
-                            </p>
-                        </div>
-                        <div class="container text-light text-center">
-                            <p></p>
-                            <p>Campeones de Demacia</p>
-                        </div>
-                        <div class="container-fluid pr-3 mr-3 pt-1  ">
-                            <div id="carouselCampeonesDemacia" class="carousel slide " data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active carouselcampeones" data-bs-interval="700">
-                                        <img src="assets/cardgaren.png" class="d-block w-100" alt="...">
-                                        <div class="carousel-caption pb-2 ">
-                                            <h5>Garen</h5>
-                                            <p>El Poder de Demacia </p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/cardgalio.jpg" class="d-block w-100" alt="...">
-                                        <div class="carousel-caption pb-2 ">
-                                            <h5>Galio</h5>
-                                            <p>El Coloso</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/cardfiora.jpg" class="d-block w-100" alt="...">
-                                        <div class="carousel-caption pb-2 ">
-                                            <h5>Fiora</h5>
-                                            <p>La Estocada Excelsa</p>
-                                        </div>
-                                    </div>
+                        La capital, la Gran Ciudad de Demacia, fue fundada como un refugio de la hechicería
+                        después de la
+                        pesadilla de las Guerras Rúnicas, y construida sobre el enigma de la petricita, una
+                        peculiar piedra
+                        blanca que amortigua la energía mágica. Es desde aquí donde la familia real se ha
+                        ocupado durante
+                        mucho tiempo de la defensa de las ciudades y pueblos periféricos, las tierras de
+                        cultivo, los
+                        bosques y las montañas ricas en recursos minerales.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 ">
+                    <div id="carouselDemacia" class="carousel slide " data-bs-ride="carousel">
+
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active " data-bs-interval="700">
+                                <img src="assets/demacia-meraalta.jpg" class="d-block w-100 " alt="...">
+                                <div class="carousel-caption pb-0 ">
+                                    <h5>Lago Plateado</h5>
+                                    <p>Una ciudad en las rocosas montañas del noroeste de Demacia</p>
                                 </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselCampeonesDemacia" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next visually-hidden" type="button"
-                                    data-bs-target="#carouselCampeonesDemacia" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/demacia-ciudadeladelamanecer.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption pb-2 ">
+                                    <h5>Ciudadela del Amanecer</h5>
+                                    <p>Palacio de Jarvan III</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/demacia-salondelvalor.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption pb-2 ">
+                                    <h5>Salon del Valor</h5>
+                                    <p>Donde se recuerda a los guerreros caidos</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/demacia-temploportadoresdelaluz.jpg" class="d-block w-100"
+                                    alt="...">
+                                <div class="carousel-caption pb-2 ">
+                                    <h5>Templo de los Portadores de la Luz</h5>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/demacia-lagranplaza.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption pb-2 ">
+                                    <h5>La Gran Plaza</h5>
+                                    <p>Donde se nombra a los gobernantes entre clamor y aplausos</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="container-fluid text-light text-center lugaresdeinteres">
-                            <p></p>
-                            <p>Lugares de Interes</p>
-                        </div>
-                        <div class="container pr-3 mr-3 pt-1">
-                            <div id="carouselFaunaDemacia" class="carousel slide " data-bs-ride="carousel">
-
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active" data-bs-interval="700">
-                                        <img src="assets/demacia-meraalta.jpg" class="d-block w-100" alt="...">
-                                        <div class="carousel-caption pb-0 ">
-                                            <h5>Lago Plateado</h5>
-                                            <p>Una ciudad en las rocosas montañas del noroeste de Demacia</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/demacia-ciudadeladelamanecer.jpg" class="d-block w-100"
-                                            alt="...">
-                                        <div class="carousel-caption pb-2 ">
-                                            <h5>Ciudadela del Amanecer</h5>
-                                            <p>Palacio de Jarvan III</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/demacia-salondelvalor.jpg" class="d-block w-100" alt="...">
-                                        <div class="carousel-caption pb-2 ">
-                                            <h5>Salon del Valor</h5>
-                                            <p>Donde se recuerda a los guerreros caidos</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/demacia-temploportadoresdelaluz.jpg" class="d-block w-100"
-                                            alt="...">
-                                        <div class="carousel-caption pb-2 ">
-                                            <h5>Templo de los Portadores de la Luz</h5>
-
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/demacia-lagranplaza.jpg" class="d-block w-100" alt="...">
-                                        <div class="carousel-caption pb-2 ">
-                                            <h5>La Gran Plaza</h5>
-                                            <p>Donde se nombra a los gobernantes entre clamor y aplausos</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselFaunaDemacia" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next visually-hidden" type="button"
-                                    data-bs-target="#carouselFaunaDemacia" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- finRegionDemaciaInfo -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDemacia"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next visually-hidden" type="button"
+                            data-bs-target="#carouselFaunaDemacia" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-            </div>
+                </div>
+                <div class="container"> <!-- campeonesDemacia -->
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 text-center g-1">
+                      <div class="col" data-aos="fade-left" data-aos-offset="120"
+                      data-aos-easing="ease-in-sine" >
+                        <div class="card mt-3 bg-secondary text-white">
+                          <img src="assets/Garen_0.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Garen</h5>
+                            <p class="card-text " >El Poder de Demacia</p>
+                              
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col" data-aos="fade-left" data-aos-offset="120"
+                      data-aos-easing="ease-in-sine">
+                      <div class="card mt-3 bg-secondary text-white">
+                          <img src="assets/Darius_0.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Fiora</h5>
+                            <p class="card-text">La Estocada Excelsa.</p>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col" data-aos="fade-left" data-aos-offset="120"
+                      data-aos-easing="ease-in-sine">
+                      <div class="card mt-3 bg-secondary text-white">
+                          <img src="assets/domain-of-the-ice-witch.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Galio</h5>
+                            <p class="card-text">El Coloso</p>
+                              
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col" data-aos="fade-left" data-aos-offset="120"
+                      data-aos-easing="ease-in-sine">
+                      <div class="card mt-3 bg-secondary text-white">
+                          <img src="assets/Heimerdinger_0.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Sylas</h5>
+                            <p class="card-text">El Desencadenado</p>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            <!-- finRegionDemaciaInfo -->
+        </div>
+    </div>
+    </div>
 </main>
 <!-- Footer -->
 
@@ -285,12 +290,12 @@
 
 
         </div>
-        <!--Grid roww-->
+        <!--Grid row-->
     </div>
     <!-- Grid container -->
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="text-center p-3">
         © 2022 Copyright: Adriano Perdigon
     </div>
     <!-- finCopyright -->

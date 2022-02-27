@@ -1,0 +1,8 @@
+En esta version se agregan:
+
+facciones.html
+contacto.html
+
+se agregan descriptions y keywords a todas las paginas
+
+se agregan h1 y titles donde no habia

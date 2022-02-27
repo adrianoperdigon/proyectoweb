@@ -1,66 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: 'Oswald', sans-serif !important;
 }
 
-.navbartitulo {
-  font-size: 22px;
+.itemLista {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .barranav {
-  background: #002402;
   background: -webkit-gradient(linear, left top, right top, color-stop(35%, #002402), color-stop(73%, #033e08), color-stop(76%, #034009), to(#062537));
   background: linear-gradient(90deg, #002402 35%, #033e08 73%, #034009 76%, #062537 100%);
 }
 
-.carousel {
-  height: 500px;
-}
-
-.carousel-item {
-  height: 500px;
-}
-
-.carousel {
-  min-height: 500px;
-  max-width: 100%;
-}
-
-.carousel-item img {
-  position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  top: 0;
-  left: 0;
-  min-height: 500px;
-  max-width: 100%;
-}
-
-@media (min-width: 1025px) {
-  .carouselcampeones .carousel .carousel-item {
-    margin-left: 10%;
-    height: 600px;
-    width: 1000px;
-  }
-  .h1runaterra {
-    margin-top: 3%;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 768px) {
-  .carousel .carousel-item {
-    height: 500px;
-  }
-  .carousel-item img {
-    position: absolute;
-    -o-object-fit: cover;
-       object-fit: cover;
-    top: 0;
-    left: 0;
-    min-height: 600px;
-  }
+@media (min-width: 990px) {
   .barranav {
-    height: 90px;
+    height: 12vh;
   }
+}
+
+.imgBanner {
+  padding-top: 8vh;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (min-width: 990px) {
+  .imgBanner {
+    padding-top: 14vh;
+  }
+}
+
+.itemListaDemacia {
+  background-color: linear-gradient(90deg, #020024 0%, #090979 20%, #073596 50%, #0644a0 68%, #00d4ff 100%);
+}
+
+.cardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.textoAColor, h5, p {
+  color: #c9AA71;
+}
+
+.carouselBanner {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.bottom-left .navbartitulo {
+  font-size: 200%;
+}
+
+.bottom-left .cardContainer {
+  height: 500px;
+}
+
+.bottom-left .boton {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,72 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-$colorgradiente:linear-gradient(90deg, rgba(0,36,2,1) 35%, rgba(3,62,8,1) 73%, rgba(3,64,9,1) 76%, rgba(6,37,55,1) 100%);
-$heightpre1024:500px;
+@import "_media.scss";
+@import "_variables.scss";
 
+
+
+*{
+padding:0;
+margin:0;
+  
+}
 body {
-    font-family: 'Oswald', sans-serif !important;
-  }
-.navbartitulo{
-    font-size: 22px;
-    
-}
-.barranav{
-  background: rgb(0,36,2);
-background:$colorgradiente
+  font-family: 'Oswald', sans-serif !important;
+  
 }
 
-.carousel {
-    height: $heightpre1024;
+.itemLista{
+  justify-content: center;
+  align-self: center;
+}
+.barranav {
+  background: $colorgradiente;
+  @include pantalla990{
     
-  }
+    height: 12vh;
+   
+   }
+}
 
-  .carousel-item {
-    height: $heightpre1024
-    
+.imgBanner {
+ padding-top: 8vh;
+ height: 100vh;
+ width: 100vw;
+ @include pantalla990{
+  padding-top: 14vh;
+  
+ }
+}
+
+
+
+.itemListaDemacia{
+
+ background-color: $gradientedemacia;
+}
+
+.cardContainer{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+.textoAColor{
+  color:  map-get($colors, "dorado");
+  
+ 
+}
+
+h5{
+  @extend .textoAColor
+}
+
+p{
+  @extend .textoAColor
+}
+
+
+
+.carouselBanner {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+
+.navbartitulo {
+  font-size: 200%;
+}
+.cardContainer{
+  height: 500px;
+}
+
+.boton{
+  
+    width:200px;
+    height:50px;
+    background-color:black;
+    text-align:center;
+    color:black;
+    border-radius:20px;
+    border:1px solid black;
   }
  
-  
-  .carousel{
-    min-height: $heightpre1024;
-    max-width: 100%;
   }
-  .carousel-item img {
-      position: absolute;
-      object-fit:cover;
-      top: 0;
-      left: 0;
-      min-height: $heightpre1024;
-      max-width: 100%;
-  }
-  @media(min-width:1025px) {
-    
-      
-    .carouselcampeones .carousel .carousel-item{
-      
-      margin-left: 10%;
-      height: 600px;
-      width: 1000px;
-    }
-    .h1runaterra{
-     
-      margin-top:3% ;
-    }
-   
-  @media(max-width:768px) {
-    .carousel .carousel-item {
-        height: $heightpre1024;
-      }
-      
-      .carousel-item img {
-          position: absolute;
-          object-fit:cover;
-          top: 0;
-          left: 0;
-          min-height: 600px;
-      }
-      .barranav{
-        height: 90px;
-      }
-      
-      
-      
-  }}
