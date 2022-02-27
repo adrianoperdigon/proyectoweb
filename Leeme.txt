@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 En esta version se agregan:
 
 facciones.html
@@ -5,4 +6,13 @@ contacto.html
 
 se agregan descriptions y keywords a todas las paginas
 
+=======
+En esta version se agregan:
+
+facciones.html
+contacto.html
+
+se agregan descriptions y keywords a todas las paginas
+
+>>>>>>> 76fe2f3b85ed05ca04ea1b4a6c7dcbb9da55b534
 se agregan h1 y titles donde no habia

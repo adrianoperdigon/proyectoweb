@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+$colorgradiente:linear-gradient(90deg, rgba(0,36,2,1) 35%, rgba(3,62,8,1) 73%, rgba(3,64,9,1) 76%, rgba(6,37,55,1) 100%);
+$heightpre1024:500px;
+
+body {
+    font-family: 'Oswald', sans-serif !important;
+  }
+.navbartitulo{
+    font-size: 22px;
+    
+}
+.barranav{
+  background: rgb(0,36,2);
+background:$colorgradiente
+}
+
+.carousel {
+    height: $heightpre1024;
+    
+  }
+
+  .carousel-item {
+    height: $heightpre1024
+    
+  }
+ 
+  
+  .carousel{
+    min-height: $heightpre1024;
+    max-width: 100%;
+  }
+  .carousel-item img {
+      position: absolute;
+      object-fit:cover;
+      top: 0;
+      left: 0;
+      min-height: $heightpre1024;
+      max-width: 100%;
+  }
+  @media(min-width:1025px) {
+    
+      
+    .carouselcampeones .carousel .carousel-item{
+      
+      margin-left: 10%;
+      height: 600px;
+      width: 1000px;
+    }
+    .h1runaterra{
+     
+      margin-top:3% ;
+    }
+   
+  @media(max-width:768px) {
+    .carousel .carousel-item {
+        height: $heightpre1024;
+      }
+      
+      .carousel-item img {
+          position: absolute;
+          object-fit:cover;
+          top: 0;
+          left: 0;
+          min-height: 600px;
+      }
+      .barranav{
+        height: 90px;
+      }
+      
+      
+      
+  }}

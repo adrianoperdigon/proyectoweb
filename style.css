@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+body {
+  font-family: 'Oswald', sans-serif !important;
+}
+
+.navbartitulo {
+  font-size: 22px;
+}
+
+.barranav {
+  background: #002402;
+  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #002402), color-stop(73%, #033e08), color-stop(76%, #034009), to(#062537));
+  background: linear-gradient(90deg, #002402 35%, #033e08 73%, #034009 76%, #062537 100%);
+}
+
+.carousel {
+  height: 500px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel {
+  min-height: 500px;
+  max-width: 100%;
+}
+
+.carousel-item img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 500px;
+  max-width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .carouselcampeones .carousel .carousel-item {
+    margin-left: 10%;
+    height: 600px;
+    width: 1000px;
+  }
+  .h1runaterra {
+    margin-top: 3%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 768px) {
+  .carousel .carousel-item {
+    height: 500px;
+  }
+  .carousel-item img {
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 600px;
+  }
+  .barranav {
+    height: 90px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

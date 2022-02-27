@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 body {
     font-family: 'Oswald', sans-serif !important;
@@ -11,3 +12,18 @@ body {
 background: linear-gradient(90deg, rgba(0,36,2,1) 35%, rgba(3,62,8,1) 73%, rgba(3,64,9,1) 76%, rgba(6,37,55,1) 100%);
 }
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+body {
+    font-family: 'Oswald', sans-serif !important;
+  }
+.navbartitulo{
+    font-size: 22px;
+    
+}
+.barranav{
+  background: rgb(0,36,2);
+background: linear-gradient(90deg, rgba(0,36,2,1) 35%, rgba(3,62,8,1) 73%, rgba(3,64,9,1) 76%, rgba(6,37,55,1) 100%);
+}
+
+>>>>>>> 76fe2f3b85ed05ca04ea1b4a6c7dcbb9da55b534
