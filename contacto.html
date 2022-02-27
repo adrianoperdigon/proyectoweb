@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta nombre="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Pagina con informacion sobre Runaterra">
    <meta name="keywords"  content="HTML, ASP, JS, JavaScrips">
     <!-- GoogleFont -->
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>Facciones</title>
+    <title>Contacto</title>
 </head>
 <!-- NAVBAR -->
 <header>
@@ -102,95 +102,50 @@
 
 
     <div class="container-fluid text-center py-5 bg-secondary">
-        <h2>Facciones</h2>
+        <h2>Contacto</h2>
     </div>
     <!-- listaFacciones -->
+<div class="container bg-secondary mt-5 rounded">
+    <!-- Wrapper container -->
+<div class="container py-4">
 
+    <!-- Bootstrap 5 starter form -->
+    <form id="contactForm">
+  
+      <!-- nombre input -->
+      <div class="mb-3">
+        <label class="form-label" for="nombre">Nombre:</label>
+        <input class="form-control" id="nombre" type="text" placeholder="Nombre" />
+      </div>
+  
+      <!-- Email address input -->
+      <div class="mb-3">
+        <label class="form-label" for="emailAddress">Direccion e-Mail:</label>
+        <input class="form-control" id="emailAddress" type="email" placeholder="e-Mail" />
+      </div>
+  
+      <!-- Mensaje input -->
+      <div class="mb-3">
+        <label class="form-label" for="message">Mensaje:</label>
+        <textarea class="form-control" id="message" type="text" placeholder="Escribe aqui tu mensaje" style="height: 10rem;"></textarea>
+      </div>
 
-    <div class="container-fluid bg-dark" data-aos="fade-right" data-aos-delay="50">
-        <div class="list-group bg-dark pt-4">
-
-            <a href="#faccionDarkin" class="list-group-item list-group-item-action ">Darkin</a>
-            <a href="#" class="list-group-item list-group-item-action  ">Vastaya</a>
-            <a href="#" class="list-group-item list-group-item-action  ">Shurima</a>
-            <a href="#" class="list-group-item list-group-item-action  ">Yordles</a>
-
-        </div>
+      <div class="boton">
+   
     </div>
-    <!-- finListaFacciones -->
-    <div class="container-fluid bg-dark p-0 mx-0 pt-4 text-light>
-        <div class=" container-fluid p-0 m-0">
-        <!-- faccionDarkin -->
+      <!-- enviar button -->
+      <div class="d-grid ">
+        <button class="btn btn-lg boton border-dark" type="submit">Enviar</button>
+      </div>
+  
+  <div>
+    
+  </div>
+    </form>
+ 
+  </div>
+</div>
 
-        <div class="container px-0" id="faccionDarkin">
-
-
-            <div class="row g-2">
-                <div class="col-12 col-lg-4 regionItem"><img src="assets/darkin1.jpg" class="regionItem d-block w-100"
-                        alt="...">
-                </div>
-                <div class="col-12 col-lg-4 regionItem"><img src="assets/Darkin_Origen.jpg"
-                        class="regionItem d-block w-100" alt="...">
-                </div>
-                <div class="col-12 col-lg-4 regionItem"><img src="assets/darkin23.jpg" class="regionItem d-block w-100"
-                        alt="...">
-                </div>
-
-                <div class="col-12 col-lg-12 text-light bg-secondary regionItem">
-                    <p class="textoAColor">Darkins</p>
-                    <p class="textoAColor"> Los oscuros (Darkins) son una colección de armas vivientes, de las cuales sólo quedan cinco.
-                        Sólo tres son conocidos por la historia, incluyendo la Espada de los Oscuros la Espada de los
-                        Oscuros
-                    </p>
-                    <p class="textoAColor"> El orígen de los Darkins, y cualquier historia relativa a su creación es desconocida. Pero aún
-                        así, se sabe que el arma en cuestión se apodera del cuerpo.
-                    </p>
-                </div>
-
-                <div class="container ">
-                    <!-- campeonesDarkin -->
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 text-center g-1 ">
-                        <div class="col-lg-4 " data-aos="fade-left" data-aos-offset="120"
-                            data-aos-easing="ease-in-sine">
-                            <div class="card mt-3 bg-secondary text-white ">
-                                <img src="assets/aatrox-splash.jpg " class="card-img-top " alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Aatrox</h5>
-                                    <p class="card-text ">La Espada Darkin</p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4" data-aos="fade-left" data-aos-offset="120" data-aos-easing="ease-in-sine">
-                            <div class="card mt-3 bg-secondary text-white">
-                                <img src="assets/varus-splash.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Varus</h5>
-                                    <p class="card-text">El Arco Darkin </p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4" data-aos="fade-left" data-aos-offset="120" data-aos-easing="ease-in-sine">
-                            <div class="card mt-3 bg-secondary text-white">
-                                <img src="assets/rhaast-splash.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Rhaast</h5>
-                                    <p class="card-text">La Guadaña Darkin</p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- finFaccionDarki -->
-        </div>
-    </div>
-    </div>
-</main>
 <!-- Footer -->
 
 
@@ -228,7 +183,7 @@
     <!-- Grid container -->
 
     <!-- Copyright -->
-    <div class="text-center p-3">
+    <div class="text-center p-3" >
         © 2022 Copyright: Adriano Perdigon
     </div>
     <!-- finCopyright -->
